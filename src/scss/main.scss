@@ -1,6 +1,7 @@
 @import './reset.scss';
 @import './settings/font';
 @import './settings/colors';
+@import 'Header.scss';
 
 body {
     font-family: $font-base;

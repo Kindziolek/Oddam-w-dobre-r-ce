@@ -1,0 +1,43 @@
+.header__container {
+  max-width: 80%;
+  margin: auto;
+  margin-top: 36px;
+}
+
+.login__box {
+  display: flex;
+  justify-content: flex-end;
+
+  .login-btn {
+    display: flex;
+    align-items: center;
+    color: #737373;
+    background-color: #ffffff;
+    font-size: 14px;
+    line-height: 79px;
+    border: none;
+    padding: 9px 10px;
+    height: 36px;
+
+    &:hover {
+      border: 0.75px solid #fad648;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  color: #3c3c3c;
+  font-size: 18px;
+  line-height: 24px;
+
+  &-item {
+    padding: 9px 0px;
+    margin-left: 55px;
+
+    &:hover {
+      border: 0.75px solid #3c3c3c;
+    }
+  }
+}
