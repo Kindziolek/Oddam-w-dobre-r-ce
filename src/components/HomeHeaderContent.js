@@ -15,13 +15,13 @@ const HomeHeaderContent = () => {
           <img src={Decoration} height={33} />
         </div>
       </div>
-      <div className={styles.header__content__link_box}>
-        <Link to="/logowanie" className={styles.header__content_link}>
+      <div className={styles.header__content__box}>
+        <Link to="/logowanie" className={styles.header__content__box_link}>
           ODDAJ
           <br></br>
           RZECZY
         </Link>
-        <Link to="/logowanie" className={styles.header__content_link}>
+        <Link to="/logowanie" className={styles.header__content__box_link}>
           ZORGANIZUJ ZBIÓRKĘ
         </Link>
       </div>

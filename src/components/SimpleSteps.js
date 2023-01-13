@@ -10,62 +10,77 @@ const SimpleSteps = () => {
   return (
     <div className={styles.simpleSteps}>
       <div className={styles.simpleSteps__header}>
-        <h2 className={styles.simpleSteps__title}>Wystarczą 4 proste kroki</h2>
+        <h2 className={styles.simpleSteps_title}>Wystarczą 4 proste kroki</h2>
         <div className={styles.select_icon}>
           {" "}
-          <img src={Decoration} height={83} />
+          <img src={Decoration} height={33} />
         </div>
+      </div>
 
-        <div className={styles.simpleSteps__container}>
+      <div className={styles.simpleSteps__container}>
+        <div className={styles.simpleSteps__container_content}>
           <div className={styles.simpleSteps__box}>
             <div className={styles.item_icon}>
               {" "}
               <img src={Item} height={83} />
+              </div>
               <p className={styles.simpleSteps__box_title}>Wybierz rzeczy</p>
               <span className={styles.simpleSteps__box_line}></span>
               <p className={styles.simpleSteps__box_text}>
-                ubrania, zabawki, sprzęt i inne
+                ubrania, zabawki, 
+                <br></br>
+                sprzęt i inne
               </p>
-            </div>
+
           </div>
-        </div>
-        <div className={styles.simpleSteps__container}>
+
           <div className={styles.simpleSteps__box}>
             <div className={styles.pack_icon}>
               {" "}
               <img src={Pack} height={83} />
+              </div>
               <p className={styles.simpleSteps__box_title}>Spakuj je</p>
               <span className={styles.simpleSteps__box_line}></span>
               <p className={styles.simpleSteps__box_text}>
-                skorzystaj z worków na śmieci
+                skorzystaj z
+                <br></br>
+                 worków na śmieci
               </p>
-            </div>
+
           </div>
-        </div>
-        <div className={styles.simpleSteps__container}>
+
           <div className={styles.simpleSteps__box}>
             <div className={styles.decide_icon}>
               {" "}
               <img src={Decide} height={83} />
+              </div>
               <p className={styles.simpleSteps__box_title}>
-                Zdecyduj komu chcesz pomóc
+                Zdecyduj komu 
+                <br></br>
+                chcesz pomóc
               </p>
               <span className={styles.simpleSteps__box_line}></span>
-              <p className={styles.simpleSteps__box_text}>wybierz zaufane miejsce</p>
-            </div>
+              <p className={styles.simpleSteps__box_text}>
+                wybierz zaufane
+                <br></br>
+                 miejsce
+              </p>
+
           </div>
-        </div>
-        <div className={styles.simpleSteps__container}>
+
           <div className={styles.simpleSteps__box}>
             <div className={styles.order_icon}>
               {" "}
               <img src={Order} height={83} />
+              </div>
               <p className={styles.simpleSteps__box_title}>Zamów kuriera</p>
               <span className={styles.simpleSteps__box_line}></span>
               <p className={styles.simpleSteps__box_text}>
-                kurier przyjedzie w dogodnym terminie
+                kurier przyjedzie 
+                <br></br>
+                w dogodnym terminie
               </p>
-            </div>
+
           </div>
         </div>
       </div>

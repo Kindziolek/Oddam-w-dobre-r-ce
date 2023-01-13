@@ -20,21 +20,20 @@
     justify-content: center;
   }
 
-  &__link_box {
+  &__box {
     display: flex;
     gap: 40px;
 
-  }
-
-  &_link {
-    color: #3c3c3c;
-    font-size: 36px;
-    font-weight: 300;
-    line-height: 45px;
-    width: 310px;
-    text-decoration: none;
-    border: 0.75px solid #3c3c3c;
-    text-align: center;
-    padding: 10px 0;
+    &_link {
+      color: #3c3c3c;
+      font-size: 36px;
+      font-weight: 300;
+      line-height: 45px;
+      width: 310px;
+      text-decoration: none;
+      border: 0.75px solid #3c3c3c;
+      text-align: center;
+      padding: 10px 0;
+    }
   }
 }

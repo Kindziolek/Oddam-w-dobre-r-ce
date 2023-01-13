@@ -1,11 +1,12 @@
-.header__container {
-  display: flex;
+.header {
+  &__container {
+    display: flex;
 
-  justify-content: space-around;
-}
-
-.header__nav {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+    justify-content: space-around;
+  }
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
