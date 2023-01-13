@@ -6,8 +6,8 @@ import HeaderContent from "./HeaderContent";
 const Home = () => {
    return (
    <Header />,
-   <HeaderContent />
-   );
+   <HeaderContent/>
+   )
 }
 
 

@@ -1,0 +1,29 @@
+.header__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+    width: 674px;
+
+    &-text {
+        color: #3C3C3C;
+        font-size: 38px;
+        text-align: center;
+        line-height: 55px;
+    }
+
+    &__btn-box{
+        display: flex;
+    }
+
+    &-btn {
+        color: #3C3C3C;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 300;
+        line-height: 45px;
+        width: 310px;
+        height: 120px;
+        border: 0.75px solid #3C3C3C;
+    }
+}
