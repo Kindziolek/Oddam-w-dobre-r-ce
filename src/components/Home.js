@@ -2,6 +2,7 @@ import React from "react";
 import HomeHeader from "./HomeHeader";
 import HomeHeaderContent from "./HomeHeaderContent";
 import HomeHeaderBackground from "./HomeBackground";
+import Statistics from "./Statistics";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
           <HomeHeaderContent />
         </div>
       </div>
+      <Statistics />
     </div>
   );
 };

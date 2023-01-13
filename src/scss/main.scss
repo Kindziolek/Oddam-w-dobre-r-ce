@@ -1,13 +1,14 @@
-@import './reset.scss';
-@import './settings/font';
-@import './settings/colors';
-@import 'home.scss';
-@import 'HomeHeader.scss';
-@import 'HomeHeaderContent.scss';
-@import 'HomeHeaderBackground.scss';
+@import "./reset.scss";
+@import "./settings/font";
+@import "./settings/colors";
+@import "home.scss";
+@import "HomeHeader.scss";
+@import "HomeHeaderContent.scss";
+@import "HomeHeaderBackground.scss";
+@import "Statistics.scss";
 
 body {
-    font-family: $font-alt;
+  font-family: $font-alt;
 }
 
 // body {

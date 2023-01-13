@@ -18,7 +18,7 @@ const HomeHeaderContent = () => {
         <Link to="/logowanie" className="header__content-btn">
           ODDAJ
           <br></br>
-           RZECZY
+          RZECZY
         </Link>
         <Link to="/logowanie" className="header__content-btn">
           ZORGANIZUJ ZBIÓRKĘ
