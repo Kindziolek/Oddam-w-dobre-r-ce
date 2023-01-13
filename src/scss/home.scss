@@ -1,3 +1,11 @@
 .header__container {
     display: flex;
+
+    justify-content: space-around
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }

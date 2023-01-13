@@ -1,16 +1,16 @@
 import React from "react";
-import Header from "./HomeHeader";
-import HeaderContent from "./HomeHeaderContent";
-import HeaderBackground from "./HomeBackground";
+import HomeHeader from "./HomeHeader";
+import HomeHeaderContent from "./HomeHeaderContent";
+import HomeHeaderBackground from "./HomeBackground";
 
 const Home = () => {
   return (
-    <div className="header__container">
-      <div>
-        <HeaderBackground />
-        <div className="header__">
-          <Header />
-          <HeaderContent />
+    <div>
+      <div className="header__container">
+        <HomeHeaderBackground />
+        <div className="header__nav">
+          <HomeHeader />
+          <HomeHeaderContent />
         </div>
       </div>
     </div>

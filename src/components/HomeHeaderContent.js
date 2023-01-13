@@ -7,16 +7,18 @@ const HomeHeaderContent = () => {
     <div className="header__content">
       <div>
         <h1 className="header__content-text">
-          Zacznij pomagać! Oddaj niechciane rzeczy w zaufane ręce
+          Zacznij pomagać! <br></br>Oddaj niechciane rzeczy w zaufane ręce
         </h1>
-        <div>
+        <div className="header__content-image">
           {" "}
           <img src={Decoration} height={33} />
         </div>
       </div>
-      <div className="header__content__bnt-box">
+      <div className="header__content__btn-box">
         <Link to="/logowanie" className="header__content-btn">
-          ODDAJ RZECZY
+          ODDAJ
+          <br></br>
+           RZECZY
         </Link>
         <Link to="/logowanie" className="header__content-btn">
           ZORGANIZUJ ZBIÓRKĘ
