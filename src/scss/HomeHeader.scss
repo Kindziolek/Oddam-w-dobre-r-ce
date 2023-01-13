@@ -8,7 +8,7 @@
     justify-content: flex-end;
     margin-right: 10px;
 
-    .login-btn {
+    .login-link {
       display: flex;
       align-items: center;
       color: #737373;
@@ -18,7 +18,7 @@
       border: none;
       padding: 9px 10px;
       height: 36px;
-
+      text-decoration: none;
       &:hover {
         border: 0.75px solid #fad648;
       }

@@ -1,14 +1,14 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const HomeHeader = () => {
   return (
     <div className="menu">
       <div className="menu__top">
-        <Link to="/logowanie" className="login-btn">
+        <Link to="/logowanie" className="login-link">
           Zaloguj
         </Link>
-        <Link to="/rejestracja" className="login-btn">
+        <Link to="/rejestracja" className="login-link">
           Załóż konto
         </Link>
       </div>

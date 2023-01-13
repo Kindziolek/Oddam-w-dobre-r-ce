@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import Decoration from "../assets/Decoration.svg";
 
 const HomeHeaderContent = () => {
@@ -14,13 +14,13 @@ const HomeHeaderContent = () => {
           <img src={Decoration} height={33} />
         </div>
       </div>
-      <div className="header__content__btn-box">
-        <Link to="/logowanie" className="header__content-btn">
+      <div className="header__content__link-box">
+        <Link to="/logowanie" className="header__content-link">
           ODDAJ
           <br></br>
           RZECZY
         </Link>
-        <Link to="/logowanie" className="header__content-btn">
+        <Link to="/logowanie" className="header__content-link">
           ZORGANIZUJ ZBIÓRKĘ
         </Link>
       </div>
