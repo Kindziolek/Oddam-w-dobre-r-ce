@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-scroll";
-import BackgroundImage from "../assets/Hero.png";
 
-const Header = () => {
+
+const HomeHeader = () => {
   return (
-    <div className="header">
-      <img src={BackgroundImage} className="header__background" />
+   
+      
       <div className="menu">
         <div className="menu__top">
           <Link to="/logowanie" className="login-btn">
@@ -24,9 +24,9 @@ const Header = () => {
             <li className="nav-item">Kontakt</li>
           </nav>
         </div>
-      </div>
+
     </div>
   );
 };
 
-export default Header;
+export default HomeHeader;

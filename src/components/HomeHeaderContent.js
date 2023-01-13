@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 import Decoration from "../assets/Decoration.svg";
 
-const HeaderContent = () => {
+const HomeHeaderContent = () => {
   return (
     <div className="header__content">
       <div>
@@ -26,4 +26,4 @@ const HeaderContent = () => {
   );
 };
 
-export default HeaderContent;
+export default HomeHeaderContent;
