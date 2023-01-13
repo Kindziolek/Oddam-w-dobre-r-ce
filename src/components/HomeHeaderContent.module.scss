@@ -6,27 +6,27 @@
   width: 69%;
   justify-content: center;
 
-  &-text {
+  &_text {
     color: #3c3c3c;
     font-size: 38px;
     text-align: center;
     line-height: 55px;
   }
 
-  &-image {
+  &_image {
     margin-top: 25px;
     margin-bottom: 65px;
     display: flex;
     justify-content: center;
   }
 
-  &__link-box {
+  &__link_box {
     display: flex;
     gap: 40px;
 
   }
 
-  &-link {
+  &_link {
     color: #3c3c3c;
     font-size: 36px;
     font-weight: 300;

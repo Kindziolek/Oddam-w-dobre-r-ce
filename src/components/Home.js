@@ -4,13 +4,14 @@ import HomeHeaderContent from "./HomeHeaderContent";
 import HomeHeaderBackground from "./HomeBackground";
 import Statistics from "./Statistics";
 import SimpleSteps from "./SimpleSteps";
+import styles from "./Home.module.scss";
 
 const Home = () => {
   return (
     <div>
-      <div className="header__container">
+      <div className={styles.header__container}>
         <HomeHeaderBackground />
-        <div className="header__nav">
+        <div className={styles.header__nav}>
           <HomeHeader />
           <HomeHeaderContent />
         </div>
