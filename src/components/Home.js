@@ -3,6 +3,7 @@ import HomeHeader from "./HomeHeader";
 import HomeHeaderContent from "./HomeHeaderContent";
 import HomeHeaderBackground from "./HomeBackground";
 import Statistics from "./Statistics";
+import SimpleSteps from "./SimpleSteps";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         </div>
       </div>
       <Statistics />
+      <SimpleSteps />
     </div>
   );
 };
