@@ -2,9 +2,10 @@
 @import './settings/font';
 @import './settings/colors';
 @import 'Header.scss';
+@import 'HeaderContent.scss';
 
 body {
-    font-family: $font-base;
+    font-family: $font-alt;
 }
 
 // body {

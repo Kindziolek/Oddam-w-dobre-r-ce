@@ -1,11 +1,13 @@
 import React from "react";
 import Header from "./Header"
+import HeaderContent from "./HeaderContent";
 
 
 const Home = () => {
    return (
-   <Header />
-   )
+   <Header />,
+   <HeaderContent />
+   );
 }
 
 
