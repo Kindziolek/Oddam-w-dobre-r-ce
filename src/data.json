@@ -1,0 +1,114 @@
+
+
+[
+  {
+    "type": "local",
+    "title": "Zbiórka “Lorem Ipsum 1”",
+    "description": "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+    "items": "Egestas, sed, tempus"
+  },
+  {
+    "type": "local",
+    "title": "Zbiórka “Lorem Ipsum 2”",
+    "description": "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
+    "items": "Ut, aliquam, purus, sit, amet"
+  },
+  {
+    "type": "local",
+    "title": "Zbiórka “Lorem Ipsum 3”",
+    "description": "Scelerisque in dictum non consectetur a erat nam.",
+    "items": "Mi, quis, hendrerit, dolor"
+  },
+  {
+    "type": "fundations",
+    "title": "Fundacja “Dbam o Zdrowie””",
+    "description": "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
+    "items": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+  },
+  {
+    "type": "local",
+    "title": "Fundacja “Dla dzieci”",
+    "description": "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
+    "items": "ubrania, meble, zabawki"
+  },
+  {
+    "type": "local",
+    "title": "Fundacja “Bez domu”",
+    "description": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
+    "items": "ubrania, jedzenie, ciepłe koce"
+  },
+  {
+    "type": "fundations",
+    "title": "Fundacja “Lorem Ipsum 4”",
+    "description": "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+    "items": "Egestas, sed, tempus"
+  },
+  {
+    "type": "local",
+    "title": "Fundacja “Lorem Ipsum 5”",
+    "description": "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
+    "items": "Ut, aliquam, purus, sit, amet"
+  },
+  {
+    "type": "local",
+    "title": "Fundacja “Lorem Ipsum 6”",
+    "description": "Scelerisque in dictum non consectetur a erat nam.",
+    "items": "Mi, quis, hendrerit, dolor"
+  },
+  {
+    "type": "fundations",
+    "title": "Fundacja “Lorem Ipsum 7”",
+    "description": "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+    "items": "Egestas, sed, tempus"
+  },
+  {
+    "type": "local",
+    "title": "Fundacja “Lorem Ipsum 8”",
+    "description": "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
+    "items": "Ut, aliquam, purus, sit, amet"
+  },
+  {
+    "type": "local",
+    "title": "Fundacja “Lorem Ipsum 9”",
+    "description": "Scelerisque in dictum non consectetur a erat nam.",
+    "items": "Mi, quis, hendrerit, dolor"
+  },
+  {
+    "type": "organizations",
+    "title": "Organizacja “Lorem Ipsum 1”",
+    "description": "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+    "items": "Egestas, sed, tempus"
+  },
+  {
+    "type": "organizations",
+    "title": "Organizacja “Lorem Ipsum 2”",
+    "description": "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
+    "items": "Ut, aliquam, purus, sit, amet"
+  },
+  {
+    "type": "organizations",
+    "title": "Organizacja “Lorem Ipsum 3”",
+    "description": "Scelerisque in dictum non consectetur a erat nam.",
+    "items": "Mi, quis, hendrerit, dolor"
+  },
+  {
+    "type": "organizations",
+    "title": "Organizacja “Lorem Ipsum 4”",
+    "description": "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+    "items": "Egestas, sed, tempus"
+  },
+  {
+    "type": "organizations",
+    "title": "Organizacja “Lorem Ipsum 5”",
+    "description": "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
+    "items": "Ut, aliquam, purus, sit, amet"
+  },
+  {
+    "type": "organizations",
+    "title": "Organizacja “Lorem Ipsum 6”",
+    "description": "Scelerisque in dictum non consectetur a erat nam.",
+    "items": "Mi, quis, hendrerit, dolor"
+  }
+]
+
+
