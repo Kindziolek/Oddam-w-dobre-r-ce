@@ -6,6 +6,7 @@ import HomeHeaderBackground from "./HomeBackground";
 import Statistics from "./Statistics";
 import SimpleSteps from "./SimpleSteps";
 import HomeAboutUs from "./HomeAboutUs";
+import WhoWeHelp from "./WhoWeHelp";
 
 
 
@@ -22,6 +23,7 @@ const Home = () => {
       <Statistics />
       <SimpleSteps />
       <HomeAboutUs />
+      <WhoWeHelp />
     </div>
   );
 };

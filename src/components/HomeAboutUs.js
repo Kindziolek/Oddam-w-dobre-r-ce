@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./HomeAboutUs.module.scss";
 import Decoration from "../assets/Decoration.svg";
 import Signature from "../assets/Signature.svg";
-import { Link } from "react-router-dom";
 
 const HomeAboutUs = () => {
   return (

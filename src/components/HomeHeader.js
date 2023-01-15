@@ -23,7 +23,7 @@ const HomeHeader = () => {
           <li className={styles.nav_item}>
             <a href="#AboutUs"> O nas</a>
           </li>
-          <li className={styles.nav_item}>Funadacja i organizacje</li>
+          <li className={styles.nav_item}><a href="#WhoWeHelp">Funadacja i organizacje</a></li>
           <li className={styles.nav_item}>Kontakt</li>
         </nav>
       </div>
