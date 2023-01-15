@@ -1,10 +1,13 @@
 import React from "react";
+import styles from "./Home.module.scss";
 import HomeHeader from "./HomeHeader";
 import HomeHeaderContent from "./HomeHeaderContent";
 import HomeHeaderBackground from "./HomeBackground";
 import Statistics from "./Statistics";
 import SimpleSteps from "./SimpleSteps";
-import styles from "./Home.module.scss";
+import HomeAboutUs from "./HomeAboutUs";
+
+
 
 const Home = () => {
   return (
@@ -18,6 +21,7 @@ const Home = () => {
       </div>
       <Statistics />
       <SimpleSteps />
+      <HomeAboutUs />
     </div>
   );
 };

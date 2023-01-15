@@ -19,6 +19,7 @@
       padding: 9px 10px;
       height: 36px;
       text-decoration: none;
+      border: 0.75px solid transparent;
       &:hover {
         border: 0.75px solid #fad648;
       }
@@ -37,6 +38,7 @@
     padding: 9px 20px;
     margin-left: 10px;
     text-decoration: none;
+    border: 0.75px solid transparent;
 
     &:hover {
       border: 0.75px solid #3c3c3c;
