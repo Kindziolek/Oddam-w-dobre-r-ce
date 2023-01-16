@@ -4,10 +4,9 @@ import Decoration from "../assets/Decoration.svg";
 import Organizations from "./Organizations";
 import Local from "./Local";
 import Fundations from "./Fundations";
+import { FUNDATIONS, LOCAL, ORGANIZATIONS } from "../hooks/useNews";
 
-const FUNDATIONS = 1;
-const ORGANIZATIONS = 2;
-const LOCAL = 3;
+
 
 const WhoWeHelp = () => {
   const [activeTab, setActiveTab] = useState(FUNDATIONS);
