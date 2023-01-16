@@ -13,7 +13,7 @@ import Contact from "./Contact";
 
 const Home = () => {
   return (
-    <div>
+    <div id="Start">
       <div className={styles.header__container}>
         <HomeHeaderBackground />
         <div className={styles.header__nav}>

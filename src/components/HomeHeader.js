@@ -15,7 +15,8 @@ const HomeHeader = () => {
       </div>
       <div>
         <nav className={styles.nav}>
-          <li className={styles.nav_item}>Start</li>
+          <li className={styles.nav_item}>
+            <Link to="/">Start</Link></li>
           <li className={styles.nav_item}>
             {" "}
             <a href="#SimpleSteps">O co chodzi?</a>
