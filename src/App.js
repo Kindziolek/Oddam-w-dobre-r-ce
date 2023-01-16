@@ -3,8 +3,10 @@ import "./scss/main.scss";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import Register from "./components/Register";
+import Logout from "./components/Logout";
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
 
 const router = createBrowserRouter([
   {
@@ -21,6 +23,11 @@ const router = createBrowserRouter([
     path: "/rejestracja",
     element: <Register />,
   },
+
+  {
+    path: "/wylogowano",
+    element: <Logout />,
+  }
 ]);
 
 function App() {
