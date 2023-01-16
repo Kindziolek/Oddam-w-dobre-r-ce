@@ -24,7 +24,7 @@ const HomeHeader = () => {
             <a href="#AboutUs"> O nas</a>
           </li>
           <li className={styles.nav_item}><a href="#WhoWeHelp">Funadacja i organizacje</a></li>
-          <li className={styles.nav_item}>Kontakt</li>
+          <li className={styles.nav_item}><a href="#Contact">Kontakt</a></li>
         </nav>
       </div>
     </div>

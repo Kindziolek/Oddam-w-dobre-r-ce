@@ -7,6 +7,7 @@ import Statistics from "./Statistics";
 import SimpleSteps from "./SimpleSteps";
 import HomeAboutUs from "./HomeAboutUs";
 import WhoWeHelp from "./WhoWeHelp";
+import Contact from "./Contact";
 
 
 
@@ -24,6 +25,7 @@ const Home = () => {
       <SimpleSteps />
       <HomeAboutUs />
       <WhoWeHelp />
+      <Contact />
     </div>
   );
 };
