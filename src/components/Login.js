@@ -23,7 +23,7 @@ const Login = () => {
                 <div className={styles.form__box}>
                   <p className={styles.form_title}>Email</p>
                   <input
-                    type="text"
+                    type="email"
                     name="name"
                     className={styles.form_placeholder}
                   />
