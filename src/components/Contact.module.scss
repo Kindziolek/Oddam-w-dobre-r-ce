@@ -13,6 +13,7 @@
   &__contener {
     height: 977px;
   }
+
   &__content {
     display: flex;
     height: 100%;
@@ -42,8 +43,8 @@
       margin-bottom: 50px;
     }
   }
-
-  &__form {
+}
+  .form {
     width: 528px;
 
     &__container {
@@ -65,6 +66,7 @@
       color: #3c3c3c26;
       border: none;
       border-bottom: 1px solid #707070;
+      padding: 0;
       padding-bottom: 4px;
     }
 
@@ -90,6 +92,7 @@
       display: flex;
       justify-content: flex-end;
     }
+
     &_btn {
       text-align: center;
       font-weight: 300;
@@ -105,7 +108,7 @@
     }
   }
 
-  &__footer {
+  .footer {
     margin: auto;
     max-width: 80%;
     display: flex;
@@ -128,7 +131,7 @@
     &__icon_hiden {
       display: flex;
       flex-direction: row;
-      gap: 20px;
+      gap: 86px;
     }
   }
-}
+

@@ -6,8 +6,6 @@ import Local from "./Local";
 import Fundations from "./Fundations";
 import { FUNDATIONS, LOCAL, ORGANIZATIONS } from "../hooks/useNews";
 
-
-
 const WhoWeHelp = () => {
   const [activeTab, setActiveTab] = useState(FUNDATIONS);
   return (
@@ -20,17 +18,43 @@ const WhoWeHelp = () => {
         </div>
       </div>
       <div className={styles.whoWeHelp__menu}>
-        <button type="button" className={styles.whoWeHelp__btn} onClick={() => setActiveTab(FUNDATIONS)}>Fundacjom</button>
-        <button type="button" className={styles.whoWeHelp__btn} onClick={() => setActiveTab(ORGANIZATIONS)}>
+        <button
+          type="button"
+          className={styles.whoWeHelp__btn}
+          onClick={() => setActiveTab(FUNDATIONS)}
+        >
+          Fundacjom
+        </button>
+        <button
+          type="button"
+          className={styles.whoWeHelp__btn}
+          onClick={() => setActiveTab(ORGANIZATIONS)}
+        >
           Organizacjom <br></br> pozarządowym
         </button>
-        <button type="buttom" className={styles.whoWeHelp__btn} onClick={() => setActiveTab(LOCAL)}>
+        <button
+          type="buttom"
+          className={styles.whoWeHelp__btn}
+          onClick={() => setActiveTab(LOCAL)}
+        >
           Lokalnym <br></br> zbiórkom
         </button>
       </div>
-      {activeTab === FUNDATIONS && <div><Fundations/></div>}
-      {activeTab === ORGANIZATIONS && <div><Organizations/></div>}
-      {activeTab === LOCAL && <div><Local/></div>}
+      {activeTab === FUNDATIONS && (
+        <div>
+          <Fundations />
+        </div>
+      )}
+      {activeTab === ORGANIZATIONS && (
+        <div>
+          <Organizations />
+        </div>
+      )}
+      {activeTab === LOCAL && (
+        <div>
+          <Local />
+        </div>
+      )}
     </div>
   );
 };
