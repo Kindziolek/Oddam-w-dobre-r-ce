@@ -1,18 +1,28 @@
 //zadeklaruj 3 zmienne, localNews, ..., fi
 
+import { useState } from "react";
 import news from "./news.json";
 
 const FUNDATIONS = "fundations";
 const ORGANIZATIONS = "organizations";
 const LOCAL = "local";
 
-export default () => {
-  const fundationsNews = news.filter(({type}) => type === FUNDATIONS);
-  const organizationsNews = news.filter(({type}) => type === ORGANIZATIONS);
-  const localNews = news.filter(({type}) => type === LOCAL);
+export default (targetType) => {
+  const [page, setPage] = useState(0);
+  const rows = news.filter(({ type }) => type === targetType);
+
+  const rowsPerPage = 3;
+
+  const pagination = {
+    rowsPerPage,
+    currentPage: page,
+    maxPage: Math.ceil(rows.length / rowsPerPage),
+    setPage,
+  };
 
   return {
-    fundationsNews, organizationsNews, localNews
+    rows: rows.filter((_, i) => i >= page && i < page + rowsPerPage),
+    pagination,
   };
 };
 

@@ -1,9 +1,11 @@
 import React from "react";
-import useNews from "../hooks/useNews";
+import useNews, { ORGANIZATIONS } from "../hooks/useNews";
 import styles from "./Organizations.module.scss";
+import Pagination from "./Pagination";
 
 const Organizations = () => {
-  const { organizationsNews } = useNews();
+  const { rows, pagination } = useNews(ORGANIZATIONS);
+  const { currentPage, maxPage, setPage } = pagination;
 
   return (
     <div className={styles.organizations}>
@@ -13,7 +15,7 @@ const Organizations = () => {
         Ut enim ad minim veniam, quis nostrud exercitation.{" "}
       </p>
 
-      {organizationsNews.map(({ title, items, description }) => {
+      {rows.map(({ title, items, description }) => {
         return (
           <div className={styles.news}>
             <div className={styles.news__content}>
@@ -24,25 +26,14 @@ const Organizations = () => {
 
               <p className={styles.news__items}>{items}</p>
             </div>
-            <div className={styles.news__line}></div>
-            <div className={styles.news__content}>
-              <div className={styles.news__box}>
-                <p className={styles.news__title}>{title}</p>
-                <p className={styles.news__items}>{items}</p>
-              </div>
-              <p className={styles.news__description}>{description}</p>
-            </div>
-            <div className={styles.news__line}></div>
-            <div className={styles.news__content}>
-              <div className={styles.news__box}>
-                <p className={styles.news__title}>{title}</p>
-                <p className={styles.news__items}>{items}</p>
-              </div>
-              <p className={styles.news__description}>{description}</p>
-            </div>
           </div>
         );
       })}
+      <Pagination
+        currentPage={currentPage}
+        maxPage={maxPage}
+        setPage={setPage}
+      />
     </div>
   );
 };

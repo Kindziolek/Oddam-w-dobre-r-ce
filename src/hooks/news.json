@@ -26,13 +26,13 @@
     "items": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
   },
   {
-    "type": "local",
+    "type": "fundations",
     "title": "Fundacja “Dla dzieci”",
     "description": "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
     "items": "ubrania, meble, zabawki"
   },
   {
-    "type": "local",
+    "type": "fundations",
     "title": "Fundacja “Bez domu”",
     "description": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
     "items": "ubrania, jedzenie, ciepłe koce"
@@ -44,13 +44,13 @@
     "items": "Egestas, sed, tempus"
   },
   {
-    "type": "local",
+    "type": "fundations",
     "title": "Fundacja “Lorem Ipsum 5”",
     "description": "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
     "items": "Ut, aliquam, purus, sit, amet"
   },
   {
-    "type": "local",
+    "type": "fundations",
     "title": "Fundacja “Lorem Ipsum 6”",
     "description": "Scelerisque in dictum non consectetur a erat nam.",
     "items": "Mi, quis, hendrerit, dolor"
@@ -62,13 +62,13 @@
     "items": "Egestas, sed, tempus"
   },
   {
-    "type": "local",
+    "type": "fundations",
     "title": "Fundacja “Lorem Ipsum 8”",
     "description": "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
     "items": "Ut, aliquam, purus, sit, amet"
   },
   {
-    "type": "local",
+    "type": "fundations",
     "title": "Fundacja “Lorem Ipsum 9”",
     "description": "Scelerisque in dictum non consectetur a erat nam.",
     "items": "Mi, quis, hendrerit, dolor"
