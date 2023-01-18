@@ -1,0 +1,81 @@
+@import "../scss/settings/font";
+
+.form {
+    width: 528px;
+  
+    &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    &__box {
+      display: flex;
+      flex-direction: column;
+      width: 256px;
+      margin-bottom: 40px;
+    }
+  
+    &_placeholder {
+      &::placeholder {
+        color: #3c3c3c26;
+      }
+      background-color: transparent;
+      font-size: 18px;
+      border: none;
+      border-bottom: 1px solid #707070;
+      padding: 4px 0;
+  
+      &__validate__error {
+  
+        color: red;
+        font-size: 12px;
+        margin-top: 5px;
+  
+        &_border {
+          border-bottom: 1px solid red;
+        }
+      }
+    }
+  
+    &_title {
+      font-weight: 600;
+      font-size: 16px;
+      color: #3c3c3c;
+      margin-bottom: 12px;
+    }
+  
+    &_message {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+  
+      &_text {
+        height: 125px;
+        resize: none;
+      }
+    }
+  
+    &_btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      border: 0.75px solid #3c3c3c;
+      width: 150px;
+      height: 50px;
+      text-align: center;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 32px;
+      font-family: $font-alt;
+      margin-top: 50px;
+      color: #000000;
+    }
+    &__box_btn {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+  }
+  
