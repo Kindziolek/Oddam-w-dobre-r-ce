@@ -1,3 +1,5 @@
+//zadeklaruj 3 zmienne, localNews, ..., fi
+
 import { useState } from "react";
 import news from "./news.json";
 

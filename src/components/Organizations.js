@@ -2,7 +2,6 @@ import React from "react";
 import useNews, { ORGANIZATIONS } from "../hooks/useNews";
 import styles from "./Organizations.module.scss";
 import Pagination from "./Pagination";
-import News from "./News";
 
 const Organizations = () => {
   const { rows, pagination } = useNews(ORGANIZATIONS);
@@ -18,11 +17,16 @@ const Organizations = () => {
 
       {rows.map(({ title, items, description }) => {
         return (
-          <News  
-          title={title}
-          description={description}
-          items={items}
-          />
+          <div className={styles.news}>
+            <div className={styles.news__content}>
+              <div className={styles.news__box}>
+                <p className={styles.news__title}>{title}</p>
+                <p className={styles.news__description}>{description}</p>
+              </div>
+
+              <p className={styles.news__items}>{items}</p>
+            </div>
+          </div>
         );
       })}
       <Pagination
