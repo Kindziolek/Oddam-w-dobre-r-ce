@@ -7,15 +7,6 @@ const validators = {
   content: (value) => value.length >= 120,
 };
 
-/**
- *
- * na submit sprawdz poprawnosc pol
- *
- * na wyjsciu z pola sprawdz poprawnosc pola
- *
- * podczas pisania jesli byl niepoprawny i zrobil sie poprawny
- */
-
 const Contact = () => {
   const [form, setForm] = useState({
     name: "",
