@@ -24,6 +24,7 @@ const Contact = () => {
     (event) => {
       event.preventDefault();
 
+
       const newIsValid = Object.fromEntries(
         Object.entries(form).map(([key, value]) => [
           key,
@@ -56,6 +57,9 @@ const Contact = () => {
     }));
   }, []);
 
+  
+
+
   return (
     <form className={styles.form} onSubmit={onSubmit}>
       <div className={styles.form__container}>
@@ -69,7 +73,7 @@ const Contact = () => {
             placeholder="Krzysztof"
             className={styles.form_placeholder}
           />
-          {!isValid.name && "Podane imię jest nieprawidłowe!"}
+          <div className={styles.form_placeholder__validate__error}>{!isValid.name && "Podane imię jest nieprawidłowe!"}</div>
         </label>
         <label className={styles.form__box}>
           <span className={styles.form_title}>Wpisz swój email</span>
@@ -82,7 +86,7 @@ const Contact = () => {
             placeholder="abc@xyz.pl"
             className={styles.form_placeholder}
           />
-          {!isValid.email && "Podany email jest nieprawidłowy!"}
+          <div className={styles.form_placeholder__validate__error}>{!isValid.email && "Podany email jest nieprawidłowy!"}</div>
         </label>
       </div>
       <label className={styles.form_message}>
@@ -92,10 +96,10 @@ const Contact = () => {
           value={form.content}
           onChange={onUpdate}
           className={`${styles.form_message_text}
-          ${styles.form_placeholder}`}
+          ${styles.form_placeholder} ${isValid.content && styles.form_placeholder__validate__error_border}`}
           placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         />
-        {!isValid.content && "Wiadomość musi mieć conajmniej 120 znaków"}
+        <div className={styles.form_placeholder__validate__error}>{!isValid.content && "Wiadomość musi mieć conajmniej 120 znaków!"}</div>
       </label>
       <div className={styles.form__box_btn}>
         <button className={styles.form_btn}>Wyślij</button>

@@ -53,7 +53,7 @@
     &_placeholder {
       background-color: transparent;
       font-size: 18px;
-      color: #3c3c3c26;
+      color: #3c3c3c;
       border: none;
       border-bottom: 1px solid #707070;
       padding: 0;
@@ -85,5 +85,15 @@
         border: 0.75px solid #3c3c3c;
       }
     }
+  }
+}
+
+.validate__error {  
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+
+  &_border {
+    border-bottom: 1px solid red;
   }
 }
