@@ -71,7 +71,7 @@ const Contact = () => {
             value={form.name}
             onChange={onUpdate}
             placeholder="Krzysztof"
-            className={styles.form_placeholder}
+            className={`${styles.form_placeholder} ${!isValid.content && styles.form_placeholder__validate__error_border}`}
           />
           <div className={styles.form_placeholder__validate__error}>{!isValid.name && "Podane imię jest nieprawidłowe!"}</div>
         </label>
@@ -84,7 +84,7 @@ const Contact = () => {
             value={form.email}
             onChange={onUpdate}
             placeholder="abc@xyz.pl"
-            className={styles.form_placeholder}
+            className={`${styles.form_placeholder} ${!isValid.content && styles.form_placeholder__validate__error_border}`}
           />
           <div className={styles.form_placeholder__validate__error}>{!isValid.email && "Podany email jest nieprawidłowy!"}</div>
         </label>
@@ -96,7 +96,7 @@ const Contact = () => {
           value={form.content}
           onChange={onUpdate}
           className={`${styles.form_message_text}
-          ${styles.form_placeholder} ${isValid.content && styles.form_placeholder__validate__error_border}`}
+          ${styles.form_placeholder} ${!isValid.content && styles.form_placeholder__validate__error_border}`}
           placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         />
         <div className={styles.form_placeholder__validate__error}>{!isValid.content && "Wiadomość musi mieć conajmniej 120 znaków!"}</div>
