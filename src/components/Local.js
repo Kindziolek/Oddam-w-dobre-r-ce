@@ -15,7 +15,7 @@ const Local = () => {
         Ut enim ad minim veniam, quis nostrud exercitation.{" "}
       </p>
 
-      {rows.map(({ title, items, description }) => {
+      {rows.map(({ title, items, description }, index) => {
         return (
           <div className={styles.news}>
             <div className={styles.news__content}>
@@ -26,7 +26,9 @@ const Local = () => {
 
               <p className={styles.news__items}>{items}</p>
             </div>
-            <div className={styles.news__line}></div>
+            {rows.length - 1 !== index && (
+              <div className={styles.news__line}></div>
+            )}
           </div>
         );
       })}

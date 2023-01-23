@@ -14,7 +14,7 @@ const Fundations = () => {
         którymi współpracujemy. Możesz sprawdzić czym się zajmują, <br></br>{" "}
         komu pomagają i czego potrzebują.
       </p>
-      {rows.map(({ title, items, description }) => {
+      {rows.map(({ title, items, description }, index) => {
         return (
           <div className={styles.news}>
             <div className={styles.news__content}>
@@ -24,7 +24,10 @@ const Fundations = () => {
               </div>
 
               <p className={styles.news__items}>{items}</p>
-            </div>
+              </div>
+            {rows.length - 1 !== index && (
+              <div className={styles.news__line}></div>
+            )}
           </div>
         );
       })}
