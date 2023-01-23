@@ -51,7 +51,7 @@ const Contact = () => {
       if (response.ok) {
         setIsSuccess(true);
       } else {
-        alert("blad api");
+        alert("błąd api");
       }
     },
     [form, isValid]
@@ -85,7 +85,7 @@ const Contact = () => {
             onChange={onUpdate}
             placeholder="Krzysztof"
             className={`${styles.form_placeholder} ${
-              !isValid.message &&
+              !isValid.name &&
               styles.form_placeholder__validate__error_border
             }`}
           />
@@ -103,7 +103,7 @@ const Contact = () => {
             onChange={onUpdate}
             placeholder="abc@xyz.pl"
             className={`${styles.form_placeholder} ${
-              !isValid.message &&
+              !isValid.email &&
               styles.form_placeholder__validate__error_border
             }`}
           />

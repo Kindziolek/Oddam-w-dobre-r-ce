@@ -5,9 +5,11 @@ import Decoration from "../assets/Decoration.svg";
 import { Link } from "react-router-dom";
 
 const validators = {
-email: (value) => /\S+@\S+\.\S+/.test(value),
-password: (value) => value.lenght >= 6,
-}
+  email: (value) => /\S+@\S+\.\S+/.test(value),
+  password: (value) => {
+    return value.length > 6;
+  },
+};
 
 const Login = () => {
   const [form, setForm] = useState({
@@ -74,37 +76,45 @@ const Login = () => {
                 <div className={styles.form__box}>
                   <span className={styles.form_title}>Email</span>
                   <input
-                     name="email"
-                     type="text"
-                     value={form.email}
-                     onChange={onUpdate}
-                     className={styles.form_placeholder}
+                    name="email"
+                    type="text"
+                    value={form.email}
+                    onChange={onUpdate}
+                    className={`${styles.form_placeholder} ${
+                      !isValid.email &&
+                      styles.form_placeholder__validate__error_border
+                    }`}
                   />
-                  <div className={styles.validate__error}>{!isValid.name && "Podany email jest nieprawidłowy!"}</div>
+                  <div className={styles.form_placeholder__validate__error}>
+                    {!isValid.email && "Podany email jest nieprawidłowy!"}
+                  </div>
                 </div>
                 <div className={styles.form__box}>
                   <span className={styles.form_title}> Hasło</span>
                   <input
-                    className={styles.form_placeholder}
+                        className={`${styles.form_placeholder} ${
+                          !isValid.password &&
+                          styles.form_placeholder__validate__error_border
+                        }`}
                     type="password"
-                    name="name"
-                     value={form.password}
-                     onChange={onUpdate}
+                    name="password"
+                    value={form.password}
+                    onChange={onUpdate}
                   />
-                    <div className={styles.validate__error}>{!isValid.name && "Podane hasło jest za krótkie!"}</div>
+                  <div className={styles.form_placeholder__validate__error}>
+                    {!isValid.password && "Podane hasło jest za krótkie!"}
+                  </div>
                 </div>
               </div>
             </label>
             <div className={styles.form__btn}>
-            <Link to="/rejestracja" className={styles.form__btn_link}>
-          Załóż konto
-        </Link>
+              <Link to="/rejestracja" className={styles.form__btn_link}>
+                Załóż konto
+              </Link>
               <button className={styles.form__btn_link}>Zaloguj się</button>
             </div>
           </form>
-         
         </div>
-
       </div>
     </div>
   );

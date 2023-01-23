@@ -51,14 +51,26 @@
         margin-bottom: 12px;
       }
       &_placeholder {
+        &::placeholder {
+          color: #3c3c3c26;
+        }
         background-color: transparent;
         font-size: 18px;
-        color: #3c3c3c26;
         border: none;
         border-bottom: 1px solid #707070;
-        padding: 0;
-        padding-bottom: 4px;
+        padding: 4px 0;
+    
+        &__validate__error {  
+          color: red;
+          font-size: 12px;
+          margin-top: 5px;
+    
+          &_border {
+            border-bottom: 1px solid red;
+          }
+        }
       }
+  
   
       &__btn {
         display: flex;
