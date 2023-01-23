@@ -4,26 +4,26 @@ import styles from "./ContactForm.module.scss";
 const validators = {
   name: (value) => value.length && value.split(" ").length === 1,
   email: (value) => /\S+@\S+\.\S+/.test(value),
-  content: (value) => value.length >= 120,
+  message: (value) => value.length >= 120,
 };
 
 const Contact = () => {
+  const [isSuccess, setIsSuccess] = useState(false);
   const [form, setForm] = useState({
     name: "",
     email: "",
-    content: "",
+    message: "",
   });
 
   const [isValid, setIsValid] = useState({
     name: true,
     email: true,
-    content: true,
+    message: true,
   });
 
   const onSubmit = useCallback(
-    (event) => {
+    async (event) => {
       event.preventDefault();
-
 
       const newIsValid = Object.fromEntries(
         Object.entries(form).map(([key, value]) => [
@@ -33,12 +33,26 @@ const Contact = () => {
       );
 
       setIsValid(newIsValid);
+      setIsSuccess(false);
 
       if (Object.values(newIsValid).some((value) => value !== true)) {
-        alert("nie wysyła danych");
+        return;
       }
 
-      console.log(form);
+      const response = await fetch(
+        "https://fer-api.coderslab.pl/v1/portfolio/contact",
+        {
+          method: "post",
+          headers: new Headers({ "Content-Type": "application/json" }),
+          body: JSON.stringify(form),
+        }
+      ).catch((error) => alert("błąd połączenia"));
+
+      if (response.ok) {
+        setIsSuccess(true);
+      } else {
+        alert("blad api");
+      }
     },
     [form, isValid]
   );
@@ -57,12 +71,11 @@ const Contact = () => {
     }));
   }, []);
 
-  
-
-
   return (
+    
     <form className={styles.form} onSubmit={onSubmit}>
-      <div className={styles.form__container}>
+      <div className={styles.succsess__text}>{isSuccess && "Wiadomość została wysłana! Wkrótce się skontaktujemy."}</div>
+      <div className={styles.form__container}> 
         <label className={styles.form__box}>
           <span className={styles.form_title}>Wpisz swoje imię</span>
 
@@ -71,9 +84,14 @@ const Contact = () => {
             value={form.name}
             onChange={onUpdate}
             placeholder="Krzysztof"
-            className={`${styles.form_placeholder} ${!isValid.content && styles.form_placeholder__validate__error_border}`}
+            className={`${styles.form_placeholder} ${
+              !isValid.message &&
+              styles.form_placeholder__validate__error_border
+            }`}
           />
-          <div className={styles.form_placeholder__validate__error}>{!isValid.name && "Podane imię jest nieprawidłowe!"}</div>
+          <div className={styles.form_placeholder__validate__error}>
+            {!isValid.name && "Podane imię jest nieprawidłowe!"}
+          </div>
         </label>
         <label className={styles.form__box}>
           <span className={styles.form_title}>Wpisz swój email</span>
@@ -84,22 +102,31 @@ const Contact = () => {
             value={form.email}
             onChange={onUpdate}
             placeholder="abc@xyz.pl"
-            className={`${styles.form_placeholder} ${!isValid.content && styles.form_placeholder__validate__error_border}`}
+            className={`${styles.form_placeholder} ${
+              !isValid.message &&
+              styles.form_placeholder__validate__error_border
+            }`}
           />
-          <div className={styles.form_placeholder__validate__error}>{!isValid.email && "Podany email jest nieprawidłowy!"}</div>
+          <div className={styles.form_placeholder__validate__error}>
+            {!isValid.email && "Podany email jest nieprawidłowy!"}
+          </div>
         </label>
       </div>
       <label className={styles.form_message}>
         <span className={styles.form_title}>Wpisz swoją wiadomość</span>
         <textarea
-          name="content"
-          value={form.content}
+          name="message"
+          value={form.message}
           onChange={onUpdate}
           className={`${styles.form_message_text}
-          ${styles.form_placeholder} ${!isValid.content && styles.form_placeholder__validate__error_border}`}
+          ${styles.form_placeholder} ${
+            !isValid.message && styles.form_placeholder__validate__error_border
+          }`}
           placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         />
-        <div className={styles.form_placeholder__validate__error}>{!isValid.content && "Wiadomość musi mieć conajmniej 120 znaków!"}</div>
+        <div className={styles.form_placeholder__validate__error}>
+          {!isValid.message && "Wiadomość musi mieć conajmniej 120 znaków!"}
+        </div>
       </label>
       <div className={styles.form__box_btn}>
         <button className={styles.form_btn}>Wyślij</button>

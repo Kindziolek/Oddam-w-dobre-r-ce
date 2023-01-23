@@ -25,7 +25,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <footer className={styles.footer} r>
+        <footer className={styles.footer}>
           <div className={styles.footer__icon_hiden}>
             <div className={styles.fb_icon}>
               {" "}
