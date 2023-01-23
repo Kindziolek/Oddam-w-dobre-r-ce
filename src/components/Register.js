@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const validators = {
   email: (value) => /\S+@\S+\.\S+/.test(value),
   password: (value, { confirmPassword }) => {
-    return value.length > 6 && value === confirmPassword;
+    return value.length > 6 && value;
   },
   confirmPassword: (value, { password }) => {
     return value.length > 6 && value === password;
